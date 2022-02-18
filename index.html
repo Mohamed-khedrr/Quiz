@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <section class="setting bg-light overflow-auto m-auto mt-5">
+      <div class="head py-4 d-flex justify-content-center align-items-center">
+        <h1 class="color-pur">Setting Your Quiz</h1>
+      </div>
+      <form class="p-4">
+        <label for="category" class="color-pur">Category</label>
+        <select
+          id="category"
+          class="form-select my-2"
+          aria-label="Default select example"
+        >
+          <option value="9" selected>General Knowledge</option>
+          <option value="27">Animal</option>
+          <option value="25">Art</option>
+          <option value="10">Books</option>
+        </select>
+        <label class="my-2 color-pur">Difficulty</label>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio1"
+            name="difficulty"
+            class="custom-control-input"
+            value="easy"
+            checked
+          />
+          <label class="custom-control-label" for="customRadio1">Easy</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio2"
+            name="difficulty"
+            class="custom-control-input"
+            value="medium"
+          />
+          <label class="custom-control-label" for="customRadio2">medium</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio2"
+            name="difficulty"
+            class="custom-control-input"
+            value="hard"
+          />
+          <label class="custom-control-label" for="customRadio2">Hard</label>
+        </div>
+        <input
+          id="q-number"
+          type="number"
+          class="form-control my-3"
+          min="0"
+          placeholder="Number of Questions"
+        />
+        <div class="alert alert-danger p-1 text-center d-none" role="alert">
+          U must enter a Number
+        </div>
+        <button
+          id="start-btn"
+          class="btn btn-success rounded-pill px-4 py-2 my-4 float-end"
+        >
+          Start
+        </button>
+      </form>
+    </section>
+    <section class="quiz bg-light overflow-auto m-auto mt-5">
+      <div
+        class="head py-4 d-flex justify-content-center align-items-center position-relative"
+      >
+        <h2 class="color-pur">Quiz</h2>
+        <div
+          id="state"
+          class="position-absolute start-0 bottom-0 mb-2 ms-2 rounded-pill px-3 py-1 text-white"
+        ></div>
+        <div
+          id="currentQusetion"
+          class="bg-success position-absolute end-0 bottom-0 mb-2 me-2 rounded-pill px-3 py-1 text-white"
+        ></div>
+      </div>
+      <form class="px-4">
+        <h6 id="qusetion" class="pt-4 pb-2"></h6>
+        <div id="answers" class="custom-control custom-radio"></div>
+        <button id="submit" class="btn btn-success float-end rounded-pill my-4">
+          submit
+        </button>
+      </form>
+    </section>
+    <section class="end bg-light overflow-auto m-auto mt-5">
+      <div
+        class="head py-4 d-flex justify-content-center align-items-center position-relative"
+      >
+        <h2 class="color-pur">Finish</h2>
+      </div>
+      <div class="p-5 text-center color-pur">
+        <h4>Score</h4>
+        <h4 id="score"></h4>
+      </div>
+      <button
+        id="try-again"
+        class="btn btn-success float-end rounded-pill my-4 me-2"
+      >
+        Try Again?
+      </button>
+    </section>
+    <!-- **********  JS ********** -->
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/jquery-3.6.0.js"></script>
+    <script type="module" src="JS/main.js"></script>
+  </body>
+</html>

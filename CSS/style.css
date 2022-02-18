@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../IMG/Wave-100s-1366px\ \(2\).svg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.color-pur {
+  color: rgb(82, 8, 151);
+}
+.head {
+  background-color: rgb(233, 229, 229);
+  border: solid rgb(170, 169, 169);
+  border-width: 0 0 1 0;
+}
+#state {
+  display: none;
+}
+
+.setting,
+.quiz,
+.end {
+  width: 50%;
+}
+.quiz,
+.end,
+.setting {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .setting,
+  .quiz,
+  .end {
+    width: 80%;
+  }
+}
