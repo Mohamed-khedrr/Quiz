@@ -1,4 +1,3 @@
-import { SetQuiz } from "./setting.js";
 export class Exam {
     constructor(questions) {
         this.questions = questions;
